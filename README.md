@@ -84,12 +84,17 @@ HTML/CSS/JavaScript puro (sem dependências externas de CDN) no front-end.
 ```bash
 cd backend
 python3 -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+source .venv/bin/activate        # Windows (PowerShell/CMD): .venv\Scripts\activate
+                                  # Windows (Git Bash/MINGW64): source .venv/Scripts/activate
 pip install -r requirements.txt
 
 python -m app.seed               # cria e popula o banco de demonstração
 uvicorn app.main:app --reload    # sobe a API + serve o dashboard
 ```
+
+> No prompt, confirme que a venv está ativa: o terminal deve mostrar `(.venv)`
+> no início da linha antes de rodar `pip install`. Sem isso, o pip instala no
+> Python global da máquina em vez do ambiente isolado do projeto.
 
 Acesse `http://localhost:8000` para o dashboard e `http://localhost:8000/docs`
 para a documentação interativa (Swagger) da API.
