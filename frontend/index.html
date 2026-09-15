@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Hub — AI Logistics Extension</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">SH</span>
+    <div>
+      <h1>Smart Hub</h1>
+      <p>AI Logistics Extension — Enterprise Challenge Leroy Merlin</p>
+    </div>
+  </div>
+  <div id="conn-status" class="conn-status">verificando API…</div>
+</header>
+
+<main>
+  <section class="kpis" id="kpis">
+    <div class="kpi-card"><span class="kpi-value" id="kpi-stores">—</span><span class="kpi-label">Lojas monitoradas</span></div>
+    <div class="kpi-card"><span class="kpi-value" id="kpi-products">—</span><span class="kpi-label">SKUs ativos</span></div>
+    <div class="kpi-card kpi-alert"><span class="kpi-value" id="kpi-critical">—</span><span class="kpi-label">Itens em estoque crítico</span></div>
+    <div class="kpi-card"><span class="kpi-value" id="kpi-critical-pct">—</span><span class="kpi-label">% da rede em risco de ruptura</span></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-header">
+      <h2>Previsão de demanda por loja/produto</h2>
+      <p>Suavização exponencial dupla (Holt) sobre 30 dias de vendas para projetar a demanda e sugerir reposição.</p>
+    </div>
+    <div class="controls">
+      <label>Loja
+        <select id="select-store"></select>
+      </label>
+      <label>Produto
+        <select id="select-product"></select>
+      </label>
+      <label>Horizonte (dias)
+        <input type="number" id="input-horizon" min="1" max="30" value="7">
+      </label>
+      <button id="btn-forecast">Gerar previsão</button>
+    </div>
+
+    <div class="forecast-grid">
+      <div class="chart-wrap"><canvas id="forecast-chart"></canvas></div>
+      <div class="forecast-cards">
+        <div class="mini-card"><span class="mini-value" id="f-avg">—</span><span class="mini-label">Demanda média/dia</span></div>
+        <div class="mini-card"><span class="mini-value" id="f-stock">—</span><span class="mini-label">Estoque atual</span></div>
+        <div class="mini-card mini-highlight"><span class="mini-value" id="f-suggested">—</span><span class="mini-label">Reposição sugerida</span></div>
+        <div class="mini-card"><span class="mini-value" id="f-risk">—</span><span class="mini-label">Dias até ruptura</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-header">
+      <h2>Roteirização inteligente de entregas</h2>
+      <p>Identifica lojas com estoque crítico, calcula a reposição necessária e monta a rota de menor distância a partir do Centro de Distribuição (vizinho mais próximo + refinamento 2-opt).</p>
+    </div>
+    <button id="btn-route">Gerar rota otimizada</button>
+
+    <div id="route-summary" class="route-summary hidden">
+      <div class="mini-card"><span class="mini-value" id="r-origin">—</span><span class="mini-label">Origem</span></div>
+      <div class="mini-card"><span class="mini-value" id="r-total">—</span><span class="mini-label">Distância otimizada (km)</span></div>
+      <div class="mini-card"><span class="mini-value" id="r-naive">—</span><span class="mini-label">Distância sem otimização (km)</span></div>
+      <div class="mini-card mini-highlight"><span class="mini-value" id="r-saved">—</span><span class="mini-label">Economia de distância</span></div>
+    </div>
+
+    <ol id="route-list" class="route-list"></ol>
+  </section>
+
+  <section class="panel">
+    <div class="panel-header">
+      <h2>Estoque por loja</h2>
+      <p>Visão consolidada de todos os SKUs — itens em vermelho estão no ponto de reposição ou abaixo dele.</p>
+    </div>
+    <label>Filtrar por loja
+      <select id="select-inventory-store"></select>
+    </label>
+    <table class="inventory-table">
+      <thead><tr><th>Loja</th><th>Produto</th><th>Estoque</th><th>Ponto de reposição</th><th>Status</th></tr></thead>
+      <tbody id="inventory-body"></tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>Enterprise Challenge — Leonardo Marsiarelli · RM 555366 · Turma 3SIOA</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
