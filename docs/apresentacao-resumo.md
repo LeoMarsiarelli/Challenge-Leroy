@@ -7,8 +7,8 @@ similar) que acompanha o vídeo pitch. Sugestão de 8 a 10 slides.
 
 - Título: **Leroy Merlin Smart Hub — AI Logistics Extension**
 - Subtítulo: Enterprise Challenge — Atividade 4
-- **Link do vídeo no YouTube:** `[preencher após publicar]`
-- **Link do repositório GitHub:** `[preencher com a URL deste repositório]`
+- **Link do vídeo no YouTube:** [`Vídeo`](https://youtu.be/QsYAtsIdOeg)
+- **Link do repositório GitHub:** [`Repositório`](https://github.com/LeoMarsiarelli/Challenge-Leroy)
 - Autor: Leonardo Marsiarelli — RM 555366 — Turma 3SIOA
 
 ## Slide 2 — O problema
