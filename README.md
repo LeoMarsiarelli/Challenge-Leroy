@@ -7,16 +7,11 @@ Enterprise Challenge — Atividade 4 (FIAP)
 > demanda por SKU/loja e roteirização otimizada de entregas a partir do Centro
 > de Distribuição.
 
-## Equipe
+## Autor
 
 | Nome completo         | RM     | Turma |
 |------------------------|--------|-------|
 | Leonardo Marsiarelli   | 555366 | 3SIOA |
-| _[preencher]_          | _[preencher]_ | _[preencher]_ |
-| _[preencher]_          | _[preencher]_ | _[preencher]_ |
-| _[preencher]_          | _[preencher]_ | _[preencher]_ |
-
-> Complete as linhas acima com os demais integrantes do grupo antes da entrega.
 
 ## O problema
 
@@ -82,7 +77,8 @@ HTML/CSS/JavaScript puro (sem dependências externas de CDN) no front-end.
 ## Como executar
 
 ```bash
-cd backend
+git clone https://github.com/LeoMarsiarelli/Challenge-Leroy.git
+cd Challenge-Leroy/backend
 python3 -m venv .venv
 source .venv/bin/activate        # Windows (PowerShell/CMD): .venv\Scripts\activate
                                   # Windows (Git Bash/MINGW64): source .venv/Scripts/activate
@@ -119,7 +115,7 @@ pytest tests/ -v
 
 ## Escopo do produto
 
-Este projeto cobre o escopo definido pelo grupo para o Enterprise Challenge:
+Este projeto cobre o escopo que defini para o Enterprise Challenge:
 gestão de estoque multi-loja, previsão de demanda por IA e roteirização
 inteligente de entregas. Não inclui integração com sistemas legados reais da
 Leroy Merlin nem processamento de pagamentos — esses pontos ficam fora do

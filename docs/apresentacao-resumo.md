@@ -9,7 +9,7 @@ similar) que acompanha o vídeo pitch. Sugestão de 8 a 10 slides.
 - Subtítulo: Enterprise Challenge — Atividade 4
 - **Link do vídeo no YouTube:** `[preencher após publicar]`
 - **Link do repositório GitHub:** `[preencher com a URL deste repositório]`
-- Nome do grupo / integrantes (nome completo + RM + turma)
+- Autor: Leonardo Marsiarelli — RM 555366 — Turma 3SIOA
 
 ## Slide 2 — O problema
 
@@ -63,12 +63,11 @@ similar) que acompanha o vídeo pitch. Sugestão de 8 a 10 slides.
 - O que está fora do escopo acadêmico definido: integração com sistemas
   legados reais da empresa e processamento de pagamentos.
 
-## Slide 9 — Equipe
+## Slide 9 — Autor
 
-- Foto, nome completo e RM de cada integrante.
-- Ex.: Leonardo Marsiarelli — RM 555366 — Turma 3SIOA.
-- Indicação se o grupo deseja participar do **FIAP NEXT 2026** como
-  expositor (24/10, ARCA Spaces, São Paulo).
+- Foto, nome completo e RM: Leonardo Marsiarelli — RM 555366 — Turma 3SIOA.
+- Indicação se deseja participar do **FIAP NEXT 2026** como expositor
+  (24/10, ARCA Spaces, São Paulo).
 
 ## Slide 10 — Encerramento
 

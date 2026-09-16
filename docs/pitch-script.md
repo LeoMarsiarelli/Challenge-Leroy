@@ -21,7 +21,7 @@ falhar.
 > reposição ao mesmo tempo, decidir a ordem de entrega manualmente custa tempo
 > e quilômetros rodados à toa.
 >
-> Criamos o **Smart Hub**, um painel único que centraliza o estoque de toda a
+> Criei o **Smart Hub**, um painel único que centraliza o estoque de toda a
 > rede, e a **AI Logistics Extension**, uma camada de inteligência artificial
 > que prevê a demanda de cada produto por loja e monta automaticamente a rota
 > de entrega mais curta para repor o que está crítico. O objetivo é simples:
@@ -93,11 +93,11 @@ entrar em detalhes de implementação.)
 
 **Fala sugerida:**
 
-> "O que vocês viram é o produto que estamos entregando ao final do
+> "O que vocês viram é o produto que estou entregando ao final do
 > Enterprise Challenge: previsão de demanda, roteirização e visão de estoque
-> funcionando de ponta a ponta. Nosso escopo acadêmico não inclui integração
+> funcionando de ponta a ponta. Meu escopo acadêmico não inclui integração
 > com os sistemas internos reais da Leroy Merlin nem processamento de
-> pagamentos — isso está fora do que definimos para esta entrega, e o
+> pagamentos — isso está fora do que defini para esta entrega, e o
 > restante está completo e testado."
 
 ---
@@ -111,13 +111,12 @@ entrar em detalhes de implementação.)
 > quilômetro rodado à toa para repor estoque. É eficiência que se traduz
 > direto em economia e em uma experiência melhor para quem entra na loja."
 
-Depois, cada integrante se apresenta com **foto, nome completo e RM**, por
-exemplo:
+Depois, apresente-se com **foto, nome completo e RM**:
 
 > "Leonardo Marsiarelli, RM 555366, turma 3SIOA."
 
-E o grupo responde, junto, se deseja participar como expositor no **FIAP NEXT
-2026** (24/10, sábado, ARCA Spaces, São Paulo).
+E diga se deseja participar como expositor no **FIAP NEXT 2026** (24/10,
+sábado, ARCA Spaces, São Paulo).
 
 ---
 
@@ -127,6 +126,6 @@ E o grupo responde, junto, se deseja participar como expositor no **FIAP NEXT
 - [ ] Todos os itens do roteiro couberam em até 5 minutos
 - [ ] Pelo menos 3 minutos são de demonstração funcional
 - [ ] AI Logistics Extension foi claramente apontada na tela
-- [ ] Cada integrante apareceu com nome completo e RM
-- [ ] O grupo respondeu se deseja participar do NEXT 2026
+- [ ] Você apareceu no vídeo com nome completo e RM
+- [ ] Você respondeu se deseja participar do NEXT 2026
 - [ ] Vídeo de "plano B" gravado e salvo
