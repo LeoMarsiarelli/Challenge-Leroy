@@ -123,7 +123,7 @@ escopo acadêmico definido para esta entrega.
 
 ## Entrega da Atividade 4
 
-- Vídeo pitch (YouTube): `(https://youtu.be/QsYAtsIdOeg)`
-- Repositório: `(https://github.com/LeoMarsiarelli/Challenge-Leroy)`
+- Vídeo pitch (YouTube): [`Vídeo pitch`](https://youtu.be/QsYAtsIdOeg)
+- Repositório: [`Repositório`](https://github.com/LeoMarsiarelli/Challenge-Leroy)
 - Roteiro do vídeo: [`docs/pitch-script.md`](docs/pitch-script.md)
 - Conteúdo de apoio para os slides: [`docs/apresentacao-resumo.md`](docs/apresentacao-resumo.md)
