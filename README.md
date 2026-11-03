@@ -67,8 +67,8 @@ challenge-leroy/
 │   ├── app.js
 │   └── styles.css
 └── docs/
-    ├── pitch-script.md          # Roteiro do vídeo pitch (até 5 min)
-    └── apresentacao-resumo.md   # Conteúdo de apoio para os slides
+    ├── apresentacao-resumo.md   # Conteúdo de apoio para os slides
+    └── slides/                  # Slides de apoio ao vídeo pitch (.pptx)
 ```
 
 **Stack:** Python 3.11, FastAPI, SQLAlchemy, SQLite, pytest no back-end;
@@ -125,5 +125,5 @@ escopo acadêmico definido para esta entrega.
 
 - Vídeo pitch (YouTube): [`Vídeo pitch`](https://youtu.be/QsYAtsIdOeg)
 - Repositório: [`Repositório`](https://github.com/LeoMarsiarelli/Challenge-Leroy)
-- Roteiro do vídeo: [`docs/pitch-script.md`](docs/pitch-script.md)
 - Conteúdo de apoio para os slides: [`docs/apresentacao-resumo.md`](docs/apresentacao-resumo.md)
+- Slides: [`docs/slides/leroy-merlin-smart-hub.pptx`](docs/slides/leroy-merlin-smart-hub.pptx)
